@@ -1,0 +1,40 @@
+[Desktop Entry]
+# With reference to Files application from /usr/share/applications/org.gnome.Nautilus.desktop
+Version=1.0
+Type=Application
+Name=Downloads
+Categories=GNOME;GTK;Utility;Core;FileManager;
+Comment=Downlaods. Access and organize files
+Keywords=folder;manager;explore;disk;filesystem;nautilus;downloads;
+# In Exec, replace the directory name "user" with the username.
+# To get username, use shell commands; `$ echo $USER`, `$ whoami`, `$ id`.
+Exec=nautilus -w /home/user/Downloads
+Icon=folder-download
+Terminal=false
+#
+X-GNOME-UsesNotifications=true
+X-Purism-FormFactor=Workstation;Mobile;
+
+#Comment
+
+# Freedesktop.org - Desktop Entry Specification - https://specifications.freedesktop.org/desktop-entry-spec/latest/index.html
+#
+# boolean=true, false
+# Exec=string
+#   Code = %f-single file, %F-multiple files, %u-single url, %U-multiple urls,
+#
+# Type=string - This specification defines 3 types of desktop entries: Application (type 1), Link (type 2) and Directory (type 3).
+# NoDisplay=boolean - NoDisplay means "this application exists, but don't display it in the menus".
+# DBusActivatable=boolean - A boolean value specifying if D-Bus activation is supported for this application. If this key is missing, the default value is false.
+#   If the value is true then implementations should ignore the Exec key and send a D-Bus message to launch the application.
+# Path=string - If entry is of type Application, the working directory to run the program in.
+# MimeType=string(s)
+# Categories=string(s)
+#   Registered Categories - https://specifications.freedesktop.org/menu-spec/latest/category-registry.html
+#     Main Categories=AudioVideo, Audio, Video, Development, Education, Game, Graphics, Network, Office, Science, Settings, System, Utility.
+#     Additional Categories=https://specifications.freedesktop.org/menu-spec/latest/additional-category-registry.html
+#     Reserved Categories=Screensaver, TrayIcon, Applet, Shell.
+# URL=string
+# PrefersNonDefaultGPU=boolean - If true, the application prefers to be run on a more powerful discrete GPU if available.
+# SingleMainWindow=boolean - If true, the application has a single main window, and does not support having an additional one opened.
+
