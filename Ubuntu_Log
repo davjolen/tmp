@@ -1,0 +1,403 @@
+Ubuntu Log
+
+------------------------------ Syntax ------------------------------
+
+* important / recommended / mandatory *
+# comment #
+#< value >#
+@ optional @
+! alert / warning !
+% error / dangerous %
+? unknown ?
+
+------------------------------ ------------------------------
+
+Linux Ubuntu
+Dual Boot
+
+------------------------------ Main ------------------------------
+
+ISO
+bootable - 2GB
+ext4 - 8GB
+swap - (ram 1x, 1.5x, *2x*)
+
+Updates
+  sudo apt update
+  sudo apt upgrade
+  * sudo apt update && sudo apt upgrade *
+  sudo apt update ; sudo apt upgrade
+
+Settings
+Display
+Icons and Dock
+
+Create directories
+  Home - .fonts, .themes, .icons
+  Documents - data (bak, others, softwares)
+
+Grub Customizer
+Synaptic Package Manager
+GDebi Package Installer
+
+Google Chrome
+
+GNOME tweak tool
+extensions.gnome.org
+  browser extension
+  sudo apt-get install chrome-gnome-shell
+  
+  Applications Menu (fmuellner)
+  Clipboard Indicator (Tudmotu)
+  ! Dash to Dock (michele_g) !
+  Hide Activities Button (zeten30)
+  OpenWeather (jens)
+  TopIcons Plus (phocean)
+  User Themes (fmuellner)
+
+Clocks
+GParted
+
+------------------------------ Others ------------------------------
+
+@
+Themes (McOS, Vimix)
+Icons (Paper)
+Cursors (Paper)
+Shell (McOS)
+@
+
+Drivers (Printer, Intel, OpenCL, OpenGl, etc.)
+
+Blackmagic Fusion
+
+OpenCL
+  # use Synaptic Package Manager #
+  # check using Blackmagic Fusion #
+  
+  # platform 1 - cpu #
+    sudo apt install mesa-utils
+    sudo apt install mesa-utils-extra
+    
+    sudo apt install ocl-icd-libopencl1
+    sudo apt install clinfo
+    
+    sudo apt install libssl-dev
+    
+    sudo apt install opencl-c-headers
+    sudo apt install opencl-clhpp-headers
+    sudo apt install opencl-headers
+    
+    sudo apt install lsb-core
+    
+    # do not install / remove mesa-opencl-icd #
+    
+    l_opencl_p_18.1.0.015.tgz
+    # install .sh using terminal with sudo, sudo ./install.sh #
+    
+    # ? now sudo apt install ocl-icd-opencl-dev works but cannot undo ? #
+  
+  # platform 2 - gpu #
+    sudo apt install beignet-opencl-icd
+    sudo apt install beignet
+    
+    clinfo
+    glxinfo
+
+# % Related Notes % #
+  
+  ?!
+  sudo add-apt-repository ppa:paulo-miguel-dias/pkppa
+  sudo apt update
+  sudo apt upgrade
+  ?!
+
+Vulkan
+  sudo dpkg --add-architecture i386
+  
+  sudo apt install vulkan-tools
+  sudo apt install vulkan-utils
+  
+  sudo apt install libgl1-mesa-glx:i386
+  sudo apt install libgl1-mesa-dri:i386
+
+  sudo apt install mesa-vulkan-drivers
+  sudo apt install mesa-vulkan-drivers:i386
+
+  sudo apt install libvulkan1
+  sudo apt install libvulkan1:i386
+  sudo apt install libvulkan-dev
+
+  vulkaninfo
+
+Fonts
+
+------------------------------ Softwares ------------------------------
+
+Steam
+  sudo apt install steam-installer
+Mount Drive (Steam Proton)
+  sudo nano /etc/fstab
+  UUID=#< sudo blkid ># /media/#< Folder Name ># ntfs uid=#< id >#,gid=#< id >#,rw,user,exec,umask=000 0 0
+  
+  # example:
+    # Drive X starts here...
+    # UUID=1234567812345678 /media/Folder ntfs uid=1000,gid=1000,rw,user,exec,umask=000 0 0
+    # Drive X ends here...
+  #
+
+Steam Startup
+  -silent
+
+Epic Games
+GOG
+Origin
+
+Stacer
+PeaZip
+
+Blender
+DaVinci Resolve
+VLC
+
+ffmpeg
+HandBrake
+ffmpeg batch
+
+simplescreenrecorder
+video-downloader (snap)
+
+GIMP
+Inkscape
+FontForge
+! Gravit Designer !
+
+XnConvert
+
+Wine
+  sudo apt install --install-recommends winehq-staging
+  sudo apt install --install-recommends winehq-devel
+  sudo apt install --install-recommends winehq-stable
+
+winetricks
+
+Lutris
+  sudo add-apt-repository ppa:lutris-team/lutris
+  sudo apt-get update
+  sudo apt-get install lutris
+
+iTunes
+
+Kid3
+
+! Bleachbit !
+
+Brasero
+
+Bless Hex Editor
+Neofetch
+  sudo apt install neofetch
+
+httpfs2
+
+------------------------------ Configuration and Help ------------------------------
+
+switch to root user
+  sudo su
+
+ID
+  id
+User ID
+  id -u
+Group ID
+  id -g
+User ID and Group ID
+  id -u && id -g
+
+env
+
+whoami
+groups #< username >#
+
+Hardware Lister
+  sudo lshw
+  lshw -short
+CPU Architecture
+  lscpu
+Block Devices Information
+  lsblk
+List USB Devices
+  lsusb
+LSB Ubuntu Version
+  lsb_release -a
+
+time
+  sudo timedatectl set-local-rtc 1
+timezone
+  timedatectl list-timezones
+  sudo timedatectl set-timezone UTC
+  
+show hidden files
+  gsettings set org.gtk.Settings.FileChooser show-hidden true
+
+clean
+  sudo apt clean
+  sudo apt autoclean
+  
+  sudo apt remove
+  sudo apt autoremove
+
+uninstall
+  dpkg --list
+  sudo apt-get --purge remove #< program name >#
+  sudo aptitude remove #< program name >#
+
+Shortcut
+  shortcut.desktop
+  [Desktop Entry]
+  Version=1.0
+  Type=Application
+  Terminal=false
+  Exec=/location
+  Name=Name
+  Comment=Comment
+  Icon=/location
+
+Password
+  sudo passwd #< username >#
+
+Computer Name
+  sudo nano /etc/hostname
+  sudo nano /etc/hosts
+
+Applications shortcuts location
+  /home/#< username >#/.local/share/applications
+  /usr/share/applications
+
+Boot-Repair
+  https://help.ubuntu.com/community/Grub2/Installing#via_the_LiveCD_terminal
+    
+    sudo fdisk -l
+    sudo blkid
+    
+    sudo mount /dev/sdXY /mnt
+    sudo grub-install --boot-directory=/mnt/boot /dev/sdX
+    
+    X is the drive letter (a, b, c, etc.); Y is the partition number (1, 2, 3, etc).
+    Example: sudo mount /dev/sda5 /mnt
+    Example: sudo grub-install --boot-directory=/mnt/boot /dev/sda
+  
+  ! sudo add-apt-repository ppa:yannubuntu/boot-repair
+  sudo apt-get update
+  sudo apt-get install -y boot-repair && boot-repair !
+
+http://nmcheck.gnome.org/
+
+Audio Settings
+  sudo nano /etc/pulse/daemon.conf
+    
+    high-priority = yes
+    nice-level = -11
+    
+    default-sample-format = s24le
+    default-sample-rate = 48000
+    alternate-sample-rate = 44100
+    
+    # remove ; before values #
+    # use " lscpu | grep 'Byte Order' " for default-sample-format le or be #
+
+ps
+  ps -e
+  ps -ef
+  ps -ef | grep #< user >#
+  ps -A
+
+pgrep
+  pgrep -l -u #< user >#
+
+pidof
+  pidof #< program >#
+
+kill
+pkill
+killall
+xkill
+
+File or folder operations
+  copy
+    cp
+  move
+    mv
+  rename
+    mv
+  delete
+    rm
+    rmdir
+  shred file
+    shred
+      shred -uvz -n3 #< file location >#
+  create file
+    touch
+  create directory
+    mkdir
+  
+  # use -i for prompt, -r for recursive, -v for verbose #
+
+create a softlink
+  ln -s /one /two
+
+Change owner of file or folder
+  sudo chown -v $USER:$USER /#< location >#
+  # ex: sudo chown -v $USER:$USER /mnt/drive #
+  # syntax: chown #< username >#:groupname directory #
+  # use -R for recursive #
+  # $USER = environment variable for username #
+
+Open directory in nautilus as administrator root
+  admin://
+  # use: admin:// before path
+  # syntax: admin://#< path >#
+  # ex: admin:///home
+
+count filetypes in a directory
+  find . -type f | sed 's/.*\.//' | sort | uniq -c
+
+search for patterns, text, word
+  grep #< value >#
+  grep -iR '#< value >#'
+  # i = ignore case, R = dereference recursive, ' ' = exact value
+
+check file size
+  ls -l #< filename >#    # displays size of the specified file #
+  ls -l *                 # displays size of all the files in the current directory #
+  ls -al *                # displays size of all the files including hidden files in the current directory #
+  ls -al #< directory >#/ # displays size of all the files including hidden files in the 'dir' directory #
+
+check directory size
+  du -sh #< directory_name ># #gives you the summarized(-s) size of the directory in human readable(-h) format
+  du -bsh *                   #gives you the apparent(-b) summarized(-s) size of all the files and directories in the current directory in human readable(-h) format
+
+-h, --human-readable  print sizes in human readable format (e.g., 1K 234M 2G)
+    --si              like -h, but use powers of 1000 not 1024
+
+------------------------------ Others ------------------------------
+
+Bliss OS -
+menuentry "Bliss OS"
+{
+set root="(hd0,10)"
+linux /bliss-x86-11.11/kernel quiet root=/dev/ram0 androidboot.selinux=permissive acpi_sleep=s3_bios,s3_mode SRC=/bliss-x86-11.11 androidboot.hardware=android_x86_64
+initrd /bliss-x86-11.11/initrd.img
+}
+
+PhoenixOS DarkMatter -
+menuentry 'PhoenixOS DarkMatter'
+{
+insmod all_video
+search --set=root --file /dark.matter
+linux /kernel quiet root=/dev/ram0 androidboot.selinux=permissive acpi_sleep=s3_bios,s3_mode SRC=/
+initrd /initrd-stock.img
+}
+
+------------------------------ ------------------------------
+
