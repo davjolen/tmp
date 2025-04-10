@@ -1,0 +1,7 @@
+[https://www.idcrawl.com/username-search](https://www.idcrawl.com/username-search)  
+[https://instantusername.com/](https://instantusername.com/)  
+[https://dnschecker.org/social-media-name-checker.php](https://dnschecker.org/social-media-name-checker.php)  
+[https://www.namecheckr.com/](https://www.namecheckr.com/)  
+[https://www.namecheck.com/en/](https://www.namecheck.com/en/)  
+[https://namechk.com/](https://namechk.com/)  
+[https://brandsnag.com/social-media-handle-checker](https://brandsnag.com/social-media-handle-checker)  
