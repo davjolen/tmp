@@ -2,11 +2,21 @@ Synaptic Package Manager
 Gdebi Package Installer
 Grub Customizer
 
-Extensions
-  Alphabetical App Grid
-  Clipboard Indicator
 Extension Manager
 GNOME Tweaks
+GNOME Extensions
+|
+Alphabetical App Grid by Stuart Hayhurst
+ArcMenu by andrew_z
+Blur my Shell by aunetx
+Clipboard Indicator by Tudmotu
+Customize Clock on Lock Screen by PRATAP PANABAKA
+Desktop Icons NG (DING) by rastersoft*
+Hot Edge by jdoda
+Ubuntu AppIndicators by didrocks*
+Ubuntu Dock by didrocks*
+Ubuntu Tiling Assistant*
+User Themes by fmuellner
 
 FFmpeg
 VLC
