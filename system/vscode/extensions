@@ -1,0 +1,34 @@
+Name: HTML CSS Support
+Id: ecmel.vscode-html-css
+Description: CSS Intellisense for HTML
+Version: 2.0.13
+Publisher: ecmel
+VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css
+
+Name: Live Preview
+Id: ms-vscode.live-server
+Description: Hosts a local server in your workspace for you to preview your webpages on.
+Version: 0.4.15
+Publisher: Microsoft
+VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server
+
+Name: Prettier - Code formatter
+Id: esbenp.prettier-vscode
+Description: Code formatter using prettier
+Version: 11.0.0
+Publisher: Prettier
+VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
+
+Name: Render Line Endings
+Id: medo64.render-crlf
+Description: Renders end of line characters (`CR`, `LF`, `CRLF`) when whitespace rendering is on
+Version: 1.8.5
+Publisher: Josip Medved
+VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=medo64.render-crlf
+
+Name: SVG
+Id: jock.svg
+Description: SVG Coding, Minify, Pretty, Preview All-In-One
+Version: 1.5.4
+Publisher: jock
+VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=jock.svg
