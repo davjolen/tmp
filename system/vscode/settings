@@ -1,1 +1,13 @@
-
+{
+    "files.eol": "\r\n",
+    "editor.tabSize": 2,
+    "editor.wordWrap": "on",
+    "editor.renderWhitespace": "all",
+    "window.menuBarVisibility": "visible",
+    "window.titleBarStyle": "custom",
+    "window.restoreFullscreen": true,
+    "workbench.startupEditor": "newUntitledFile",
+    "prettier.endOfLine": "crlf",
+    "code-eol.highlightNonDefault": true,
+    "code-eol.highlightExtraWhitespace": true
+}
