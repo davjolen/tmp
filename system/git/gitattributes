@@ -1,0 +1,651 @@
+# ################################
+# .gitattributes
+# 2025-07-08 01:45 UTC+00:00
+# ################################
+
+
+# ================================
+# Git
+# https://git-scm.com/
+# https://git-scm.com/docs/gitattributes
+#
+# GitHub
+# https://github.com/
+# https://docs.github.com/en/get-started/git-basics/configuring-git-to-handle-line-endings
+#
+# git config --global core.autocrlf false
+# ================================
+
+# ================================
+# IANA - Media Types
+# 2025-05-30
+# https://www.iana.org/assignments/media-types/media-types.xhtml
+# https://www.iana.org/assignments/media-types/media-types.xml
+# ================================
+
+# ================================================================
+# LF Universal
+# ================================================================
+
+# Fallback for all other text-like formats (application/*, text/*)
+* text eol=lf
+
+# ================================================================
+# LF MANDATORY
+# application/x-shellscript, text/plain
+# ================================================================
+
+# Shell scripts (application/x-shellscript, text/plain)
+*.bash          text eol=lf
+*.sh            text eol=lf
+
+*.command       text eol=lf
+*.csh           text eol=lf
+*.fish          text eol=lf
+*.ksh           text eol=lf
+*.zsh           text eol=lf
+
+# Shell related (application/x-shellscript, text/plain)
+.bash_env       text eol=lf
+.bash_login     text eol=lf
+.bash_logout    text eol=lf
+.bash_profile   text eol=lf
+.bashrc         text eol=lf
+.env            text eol=lf
+.inputrc        text eol=lf
+.login          text eol=lf
+.logout         text eol=lf
+.profile        text eol=lf
+
+.zlogin         text eol=lf
+.zlogout        text eol=lf
+.zprofile       text eol=lf
+.zshenv         text eol=lf
+.zshrc          text eol=lf
+
+*.mk            text eol=lf
+Makefile        text eol=lf
+makefile        text eol=lf
+
+*.dockerfile    text eol=lf
+Dockerfile      text eol=lf
+dockerfile      text eol=lf
+
+# ================================================================
+# CRLF MANDATORY
+# application/*, application/xml, application/x-bat, application/x-powershell, text/*, text/plain
+# ================================================================
+
+*.bat           text eol=crlf
+*.cmd           text eol=crlf
+*.ps1           text eol=crlf
+
+*.reg           text eol=crlf
+hosts           text eol=crlf
+
+# Visual Studio (application/*, application/xml, text/*, text/plain)
+*.csproj        text eol=crlf
+*.sln           text eol=crlf
+*.vbproj        text eol=crlf
+*.vcproj        text eol=crlf
+*.vcxproj       text eol=crlf
+
+# ================================================================
+# LF PREFERRED - TEXT/UTF-8 FILES
+# text/*, application/json, application/xml, etc.
+# ================================================================
+
+# Programming languages (text/x-*, source code)
+
+*.asm           text eol=lf
+*.s             text eol=lf
+
+*.C             text eol=lf
+*.H             text eol=lf
+*.c             text eol=lf
+*.c++           text eol=lf
+*.cc            text eol=lf
+*.cpp           text eol=lf
+*.cppm          text eol=lf
+*.cxx           text eol=lf
+*.h             text eol=lf
+*.h++           text eol=lf
+*.hh            text eol=lf
+*.hpp           text eol=lf
+*.hxx           text eol=lf
+*.ixx           text eol=lf
+
+*.cmake         text eol=lf
+CMakeLists.txt  text eol=lf
+
+*.m4            text eol=lf
+configure       text eol=lf
+configure.ac    text eol=lf
+configure.in    text eol=lf
+
+*.gdscript      text eol=lf
+*.go            text eol=lf
+*.java          text eol=lf
+*.js            text eol=lf
+*.lua           text eol=lf
+*.php           text eol=lf
+*.py            text eol=lf
+*.rb            text eol=lf
+*.rs            text eol=lf
+*.ts            text eol=lf
+
+# Web markup and styles (text/html, text/css, image/svg+xml)
+*.css           text eol=lf
+*.htm           text eol=lf
+*.html          text eol=lf
+*.scss          text eol=lf
+*.svg           text eol=lf
+*.xht           text eol=lf
+*.xhtml         text eol=lf
+
+# Documents (text/markdown, text/plain, text/csv)
+*.md            text eol=lf
+*.text          text eol=lf
+*.txt           text eol=lf
+
+*.adoc          text eol=lf
+*.bibtex        text eol=lf
+*.csv           text eol=lf
+*.mdx           text eol=lf
+*.note          text eol=lf
+*.notes         text eol=lf
+*.sql           text eol=lf
+*.tab           text eol=lf
+*.tex           text eol=lf
+*.textile       text eol=lf
+*.tsv           text eol=lf
+*.vcard         text eol=lf
+*.vcf           text eol=lf
+
+# Configuration formats (application/json, application/yaml, text/x-ini)
+*.conf          text eol=lf
+*.ini           text eol=lf
+*.json          text eol=lf
+*.toml          text eol=lf
+*.xml           text eol=lf
+*.yaml          text eol=lf
+*.yml           text eol=lf
+
+# Git and project files (text/plain)
+.editorconfig   text eol=lf
+.gitattributes  text eol=lf
+.gitignore      text eol=lf
+.gitkeep        text eol=lf
+
+# Others
+
+# Checksums
+
+*.CHECKSUM      text eol=lf
+*.CHECKSUMS     text eol=lf
+*.checksum      text eol=lf
+*.checksums     text eol=lf
+*.cksm          text eol=lf
+*.CKSM          text eol=lf
+CHECKSUM        text eol=lf
+CHECKSUMS       text eol=lf
+checksum        text eol=lf
+checksums       text eol=lf
+cksm            text eol=lf
+CKSM            text eol=lf
+
+*.SHA           text eol=lf
+*.SHA1          text eol=lf
+*.SHA256        text eol=lf
+*.SHA3-256      text eol=lf
+*.SHA384        text eol=lf
+*.SHA512        text eol=lf
+*.sha           text eol=lf
+*.sha1          text eol=lf
+*.sha256        text eol=lf
+*.sha3-256      text eol=lf
+*.sha384        text eol=lf
+*.sha512        text eol=lf
+SHA             text eol=lf
+SHA1            text eol=lf
+SHA256          text eol=lf
+SHA3-256        text eol=lf
+SHA384          text eol=lf
+SHA512          text eol=lf
+sha             text eol=lf
+sha1            text eol=lf
+sha256          text eol=lf
+sha3-256        text eol=lf
+sha384          text eol=lf
+sha512          text eol=lf
+
+*.BLAKE2SP      text eol=lf
+*.BLAKE2sp      text eol=lf
+*.CRC32         text eol=lf
+*.CRC64         text eol=lf
+*.MD5           text eol=lf
+*.XXH64         text eol=lf
+*.blake2sp      text eol=lf
+*.crc32         text eol=lf
+*.crc64         text eol=lf
+*.md5           text eol=lf
+*.xxh64         text eol=lf
+BLAKE2SP        text eol=lf
+BLAKE2sp        text eol=lf
+CRC32           text eol=lf
+CRC64           text eol=lf
+MD5             text eol=lf
+XXH64           text eol=lf
+blake2sp        text eol=lf
+crc32           text eol=lf
+crc64           text eol=lf
+md5             text eol=lf
+xxh64           text eol=lf
+
+# ================================================================
+# Automatic EOL
+# application/*, text/*, text/plain
+# ================================================================
+*.ansi          text=auto
+*.ascii         text=auto
+*.utf           text=auto
+*.utf-8         text=auto
+*.utf8          text=auto
+*.utf-16        text=auto
+*.utf16         text=auto
+*.utf-32        text=auto
+*.utf32         text=auto
+
+*.donotedit     text=auto
+.donotedit      text=auto
+donotedit       text=auto
+
+*.dontedit      text=auto
+.dontedit       text=auto
+dontedit        text=auto
+
+*.donotchange   text=auto
+.donotchange    text=auto
+donotchange     text=auto
+
+*.dontchange    text=auto
+.dontchange     text=auto
+dontchange      text=auto
+
+*.readonly      text=auto
+.readonly       text=auto
+readonly        text=auto
+
+*.viewonly      text=auto
+.viewonly       text=auto
+viewonly        text=auto
+
+# ================================================================
+# NO EOL - BINARY
+# application/octet-stream
+# ================================================================
+
+# Archives & compression (application/zip, x-tar, x-compress)
+*.001           binary
+*.7z            binary
+*.ace           binary
+*.apk           binary
+*.ar            binary
+*.arc           binary
+*.arj           binary
+*.bz            binary
+*.bz2           binary
+*.bzip2         binary
+*.cpio          binary
+*.crx           binary
+*.dar           binary
+*.gz            binary
+*.gzip          binary
+*.jar           binary
+*.lha           binary
+*.lz            binary
+*.lzh           binary
+*.lzma          binary
+*.pak           binary
+*.pea           binary
+*.rar           binary
+*.squashfs      binary
+*.tar           binary
+*.taz           binary
+*.tbz           binary
+*.tbz2          binary
+*.tgz           binary
+*.tlz           binary
+*.tpz           binary
+*.txz           binary
+*.tzst          binary
+*.war           binary
+*.xar           binary
+*.xz            binary
+*.z             binary
+*.zip           binary
+*.zst           binary
+
+*.apk           binary
+*.crx           binary
+
+*.dmg           binary
+*.mpkg          binary
+*.pkg           binary
+
+*.appimage      binary
+*.assert        binary
+*.deb           binary
+*.rpm           binary
+*.run           binary
+*.snap          binary
+
+*.cab           binary
+*.esd           binary
+*.swim          binary
+*.wim           binary
+
+*.ima           binary
+*.img           binary
+*.iso           binary
+
+*.nvram         binary
+*.vbox          binary
+*.vbox-prev     binary
+*.vdi           binary
+*.vhd           binary
+*.vhdx          binary
+
+*.apfs          binary
+*.fat           binary
+*.hfs           binary
+*.ntfs          binary
+
+# Fonts (application/font-*, application/octet-stream)
+*.eot           binary
+*.otf           binary
+*.ttf           binary
+*.woff          binary
+*.woff2         binary
+
+# Office documents (application/vnd.*, application/msword)
+*.doc           binary
+*.ppt           binary
+*.xls           binary
+
+*.docx          binary
+*.pptx          binary
+*.xlsx          binary
+
+*.odp           binary
+*.ods           binary
+*.odt           binary
+
+*.pdf           binary
+
+# Adobe
+# ai
+# eps
+# psd
+# pproj
+# 
+# epub
+# dwg
+# dwx
+
+# Autodesk
+# ma
+# mb
+# 3ds
+# 
+# mks
+# 
+# cube
+# icc
+# icm
+# lut
+# 
+# blackmagic
+# fusion
+# resolve
+# avid
+# 
+# blender
+# 
+# vst
+# vst2
+# vst3
+# audio
+# 
+# protools
+# ableton
+# cubase
+# steinberg
+# 
+# torrent
+
+# Compiled objects & libraries (application/octet-stream)
+
+# windows
+*.appx          binary
+*.appxbundle    binary
+*.cat           binary
+*.dll           binary
+*.exe           binary
+*.msi           binary
+*.msix          binary
+*.msixbundle    binary
+
+*.a             binary
+*.app           binary
+*.bin           binary
+*.dylib         binary
+*.gch           binary
+*.la            binary
+*.lai           binary
+*.lib           binary
+*.lo            binary
+*.o             binary
+*.obj           binary
+*.out           binary
+*.pch           binary
+*.slo           binary
+*.so            binary
+
+# Common
+*.admin         binary
+*.backup        binary
+*.BAK           binary
+*.bak           binary
+*.bk            binary
+*.CHK           binary
+*.chk           binary
+*.DAT           binary
+*.dat           binary
+*.DATA          binary
+*.data          binary
+*.dev           binary
+*.dir           binary
+*.disk          binary
+*.drive         binary
+*.dump          binary
+*.enc           binary
+*.ext           binary
+*.file          binary
+*.load          binary
+*.log           binary
+*.root          binary
+*.sav           binary
+*.save          binary
+*.sudo          binary
+*.sys           binary
+*.test          binary
+*.user          binary
+*.var           binary
+
+# Crypt
+*.cry           binary
+*.crypt         binary
+*.encrypt       binary
+*.gpg           binary
+*.key           binary
+*.keyfile       binary
+*.lock          binary
+*.pem           binary
+*.pgp           binary
+
+# Others
+*.LICENSE       binary
+*.license       binary
+*.README        binary
+*.readme        binary
+.LICENSE        binary
+.license        binary
+.README         binary
+.readme         binary
+LICENSE         binary
+license         binary
+README          binary
+readme          binary
+
+# ================================================================
+# NO EOL - BINARY
+# audio/*, image/*, video/*
+# ================================================================
+
+# Audio (audio/*)
+*.FLAC          binary
+*.flac          binary
+*.M4A           binary
+*.m4a           binary
+*.MKA           binary
+*.mka           binary
+*.MP3           binary
+*.mp3           binary
+*.OPUS          binary
+*.opus          binary
+*.PCM           binary
+*.pcm           binary
+*.WAV           binary
+*.wav           binary
+
+*.aac           binary
+*.ac3           binary
+*.adif          binary
+*.adts          binary
+*.aiff          binary
+*.alac          binary
+*.eac3          binary
+*.m4b           binary
+*.m4p           binary
+*.m4r           binary
+*.MID           binary
+*.mid           binary
+*.MIDI          binary
+*.midi          binary
+*.weba          binary
+
+# Images (image/*)
+
+*.DPX           binary
+*.dpx           binary
+*.GIF           binary
+*.gif           binary
+*.HEIC          binary
+*.heic          binary
+*.HEIF          binary
+*.heif          binary
+*.JPEG          binary
+*.jpeg          binary
+*.JPG           binary
+*.jpg           binary
+*.PNG           binary
+*.png           binary
+*.SVGZ          binary
+*.svgz          binary
+*.TIF           binary
+*.tif           binary
+*.TIFF          binary
+*.tiff          binary
+*.WEBP          binary
+*.webp          binary
+
+*.apng          binary
+*.avci          binary
+*.avcs          binary
+*.avif          binary
+*.BMP           binary
+*.bmp           binary
+*.heics         binary
+*.heifs         binary
+*.HIF           binary
+*.hif           binary
+*.ICO           binary
+*.ico           binary
+*.ICON          binary
+*.icon          binary
+*.jfi           binary
+*.jfif          binary
+*.jif           binary
+*.jpe           binary
+
+# cr2
+# cr3
+# nik
+# sraw
+# openexr
+# hasselblad
+# phaseone
+
+# Video (video/*)
+*.MKV           binary
+*.mkv           binary
+*.MOV           binary
+*.mov           binary
+*.MP4           binary
+*.mp4           binary
+*.RAW           binary
+*.raw           binary
+*.WEBM          binary
+*.webm          binary
+
+*.3g2           binary
+*.3gp           binary
+*.3gp2          binary
+*.3gpp          binary
+*.3gpp2         binary
+*.AVI           binary
+*.avi           binary
+*.h264          binary
+*.h265          binary
+*.h266          binary
+*.M4V           binary
+*.m4v           binary
+*.mj2           binary
+*.mjp2          binary
+*.mk3d          binary
+*.movie         binary
+*.MPEG          binary
+*.MPEG4         binary
+*.mpeg          binary
+*.mpeg4         binary
+*.mpg           binary
+*.nut           binary
+*.ogg           binary
+*.ogv           binary
+*.qt            binary
+*.ts            binary
+*.wmv           binary
+
+# braw
+# sidecar
+# prores
+# arriraw
+# r3d
+# dnxhd
+# ffv1
+# sony
+
+# ================================================================
+# END
+# ================================================================
