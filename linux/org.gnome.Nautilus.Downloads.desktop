@@ -4,7 +4,7 @@ Version=1.0
 Type=Application
 Name=Downloads
 Categories=GNOME;GTK;Utility;Core;FileManager;
-Comment=Downlaods. Access and organize files
+Comment=Downloads. Access and organize files
 Keywords=folder;manager;explore;disk;filesystem;nautilus;downloads;
 # In Exec, replace the directory name "user" with the username.
 # To get username, use shell commands; `$ echo $USER`, `$ whoami`, `$ id`.
