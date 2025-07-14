@@ -5,6 +5,7 @@
   "files.defaultLanguage": "plaintext",
   "files.eol": "\n",
   "keyboard.layout": "us",
+  "remoteHub.commitDirectlyWarning": "off",
   "telemetry.feedback.enabled": false,
   "telemetry.telemetryLevel": "off",
   "window.menuBarVisibility": "visible",
