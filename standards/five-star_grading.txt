@@ -1,0 +1,20 @@
+----------------------------------------------------------------
+                    5-Star Grading System
+----------------------------------------------------------------
+
+1 - Essential
+Features required to meet the minimum standards for basic functionality.
+
+2 - Standard
+Features required to meet the industry standards, norms or regulatory expectations.
+
+3 - Advanced
+Features extending beyond the basics and standards, to enhance functionality.
+
+4 - Prime
+Features that have higher capabilities beyond the advanced level, for high-level or professional functionality.
+
+5 - Complete
+Fully-featured grade that have complete or maximum capabilities and functionality.
+
+----------------------------------------------------------------
