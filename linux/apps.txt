@@ -1,0 +1,46 @@
+Synaptic Package Manager
+Gdebi Package Installer
+
+Tweaks
+Extensions
+  Alphabetical App Grid
+  Clipboard Indicator
+Extension Manager
+Extensions
+
+Grub Customizer
+
+Firefox
+Chrome
+
+neofetch
+htop
+Stacer
+
+VLC
+
+FFmpeg
+Kdenlive
+MediaInfo
+SimpleScreenRecorder
+
+GIMP
+Inkscape
+Penpot
+
+ImageMagick
+G'MIC
+
+PeaZip
+VeraCrypt
+
+RustDesk
+
+LibreOffice
+Logseq
+
+Visual Studio Code
+Meld
+ImHex
+
+dupeGuru
