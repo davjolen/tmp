@@ -31,4 +31,3 @@ Terminal=false
 # URL=string
 # PrefersNonDefaultGPU=boolean - If true, the application prefers to be run on a more powerful discrete GPU if available.
 # SingleMainWindow=boolean - If true, the application has a single main window, and does not support having an additional one opened.
-
